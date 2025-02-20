@@ -1,3 +1,4 @@
 # Cybertoon_web
-design and basic portfolio site 
-blah blah blah
+This repository contains website files 
+web design and basic portfolio site 
+### Turn it into a good readme file later 
