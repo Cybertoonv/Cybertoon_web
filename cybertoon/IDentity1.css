@@ -1,0 +1,133 @@
+.error5,
+.error6,
+.error7,
+.error8,
+.error9 {
+  position: absolute;
+  top: 173.29px;
+  left: 334.02px;
+  transform: rotate(-0.63deg);
+  transform-origin: 0 0;
+}
+.error6,
+.error7,
+.error8,
+.error9 {
+  top: 351.29px;
+  left: 336.02px;
+}
+.error7,
+.error8,
+.error9 {
+  top: 170.3px;
+  left: 332px;
+}
+.error8,
+.error9 {
+  top: 348.3px;
+  left: 334px;
+}
+.error9 {
+  top: 532.3px;
+  left: 336px;
+  color: rgba(0, 0, 0, 0.24);
+}
+.cybertoon27 {
+  position: relative;
+  background: linear-gradient(180deg, #000, #213465);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logo-angular20,
+.logo21 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo21 {
+  background-color: transparent;
+  padding: 9.765456199645996px;
+  justify-content: center;
+}
+.logo-angular20 {
+  position: absolute;
+  top: 817.88px;
+  left: calc(50% - 635.86px);
+  height: 76.43px;
+  justify-content: flex-start;
+  transform: rotate(-90.27deg);
+  transform-origin: 0 0;
+  font-size: 73.63px;
+  font-family: "Bruno Ace SC";
+}
+.the-identity-of1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 1156px;
+  flex-shrink: 0;
+}
+.the-identity-of-the-creator-is-container {
+  position: absolute;
+  top: 375px;
+  left: calc(50% - 510px);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 44.26px;
+  color: #4b4b4b;
+  font-family: "Bruno Ace";
+}
+.i6,
+.i7 {
+  position: absolute;
+  top: 21px;
+  left: 148px;
+  font-size: 117.28px;
+  font-family: "Bruno Ace SC";
+  display: inline-block;
+  width: 32px;
+  height: 122px;
+}
+.i7 {
+  top: 801px;
+  left: 141px;
+}
+.error-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    255.5deg,
+    #000,
+    rgba(14, 9, 45, 0.97) 22.4%,
+    rgba(0, 0, 0, 0.64) 52.6%,
+    rgba(7, 2, 24, 0.83) 77.74%,
+    #000
+  );
+  width: 1512px;
+}
+.error-group,
+.identity-child,
+.identity1 {
+  height: 982px;
+  overflow: hidden;
+}
+.identity-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  width: 1512px;
+}
+.identity1 {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  text-align: left;
+  font-size: 168.62px;
+  color: rgba(0, 0, 0, 0.22);
+  font-family: "Press Start 2P";
+}
