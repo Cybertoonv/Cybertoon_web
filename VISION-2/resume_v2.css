@@ -1,0 +1,124 @@
+    :root{
+        --headings: 25px;
+        --text: 12px;
+        --header:   15px;
+        --m-entry: 4px 0px;
+    }
+    
+    body {
+        font-family: system-ui;
+      /* font-family:  sans-serif; */
+      background-color: #f4f4f9;
+      margin: 0;
+      /* padding: 20px; */
+    }
+    .container {
+        max-width: 794px; 
+        /* max-height: 1122px; */
+        background-color: #fff;
+        margin: 0 auto;
+        padding: 20px; /* Reduce padding to save space */
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        display: flex
+    ;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .header p {
+        font-size: var(--headings);
+        font-style: italic;
+        color: #333;
+        margin: 10px 0;
+    }
+    .header h1 {
+        font-size: var(--headings);
+        font-family: cursive;
+    }
+  
+    
+.header_info ul {
+        font-size: var(--text);
+    gap: 18px;
+    list-style: none;
+    display: flex;
+}
+    .header_info ul li a{
+        color: inherit;
+        user-select: none;
+    }
+    .header_info  img{
+        margin-right: 10px; /* Adjust the value as needed for the gap */
+  vertical-align: middle; 
+            height: 18px;
+    }
+   
+    .logo {
+      width: 90px;
+      margin: 0 auto 10px;
+    }
+    /* change */
+    .section h2 {
+        text-transform: uppercase;
+        font-size: var(--header);
+        border-bottom: 2px solid #333;
+        padding-bottom: 5px;
+        /* margin-bottom: 10px; */
+        color: #333;
+    }
+    .section{
+        font-size: var(--text);
+    }
+   
+    .section ul li {
+      line-height: 1.3;
+    }
+    .skill-container{
+        display: flex;
+    }
+    .skill-entry{
+            margin: var(--m-entry);
+    }
+    .education-entry {
+        margin: var(--m-entry);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .education-entry .date{
+            text-align: end;
+    }
+    .project-list{
+            list-style: disc;
+    }
+    
+    .interest-entry {
+        margin: var(--m-entry);
+    }
+    .line {
+      border-top: 2px solid #333;
+      margin: 18px 0;
+    }
+    .bold{
+        font-weight: bold;
+    }
+   
+
+
+    #printButton {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+  
+      #printButton:hover {
+        background-color: #0056b3;
+      }

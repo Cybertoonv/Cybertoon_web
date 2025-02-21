@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'MRF';
+    src: url('fonts/MonumentExtended-Regular.otf') format('opentype');
+}
+:root{
+    --lc:rgb(255, 255, 255);
+    --sides:rgb(193 85 85);
+    --b:rgba(114, 114, 114, 0.849);
+    --head:rgb(5, 12, 70);
+    --lg:linear-gradient(to right, #ff5f5f, #feb47b)
+}
+.logo{
+    background-image: url('/images/grey.jpeg');
+    -webkit-background-clip: text;
+    color: transparent;  
+    font-family: MRF;
+    font-size: 35px;
+
+}
+.MRF{
+    font-family: MRF;
+}
+html, body {
+    margin: 0; /* Ensure no default margin causing overflow */
+    padding: 0; /* Ensure no default padding causing overflow */
+    height: 100%; /* Ensure the body and HTML take up the full viewport */
+    overflow: hidden; /* Disable scrolling entirely */
+}
+
+body::-webkit-scrollbar {
+    /* removing scrollbar */
+    display: none; /* Chrome, Safari, Opera */
+}
+body{
+    height: 99%;
+    /* Removing scrollbar */
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    /*  */
+    background: linear-gradient(305deg, #000000, #242424f2);
+    /* background-color: rgba(27, 27, 27, 0.699); */
+    border: 2px solid var(--sides);
+    width: 99%;
+    /* margin: 5px; */
+}
+.links ul li {
+    list-style: none;
+    font-family: MRF;
+    font-size: 14px;
+    padding: 0px 8px;
+}
+.links ul li a {
+    color: var(--lc);
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.navbar{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.links ul{
+    display: flex;
+}
+/* ICONS */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+.social-icons li {
+    display: inline;
+}
+.social-icons a {
+    color: var(--sides);
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: var(--b);
+}
+
+/* Hero Section */
+#hero-sec{
+    display: flex;
+    font-size: 5rem;
+    font-family: MRF;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    width: 100%;
+    text-transform: uppercase;
+    gap: 20px;
+    height: 95vh;
+
+}
+
+.portfolio{
+    justify-content: center;
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color:  rgb(195 139 67);
+}
+.first-h{
+    color: transparent;
+    -webkit-text-stroke: 2px var(--sides);
+    
+
+}
+.second-h{
+    width: min-content;
+   background: var(--lg);  
+   /* Addd webkit with linear gradient */
+        -webkit-background-clip: text;  
+        color: transparent; 
+        /* text-align: center;   */
+    /* color: linear-gradient(45deg,orange,); */
+}
+.creation-date{
+    background: linear-gradient(to top, #a3a523, #ef483efa);  
+   /* Addd webkit with linear gradient */
+        -webkit-background-clip: text;  
+        color: transparent; 
+    font-size: 1.2rem;
+}
+/* About_Dev */
+.about-dev{
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%; /* Full viewport height */
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+    -webkit-text-stroke:2px  black ;
+    color: transparent;
+    font-size: 3rem;
+}
+.scrolling-text {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--sides);
+    display: flex;
+    font-size: 48px;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite; /* Animation for scrolling */
+}
+
+/* Keyframes to animate the scrolling effect */
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* Start off to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left */
+    }
+}
+/* About-dev info */
+.about{
+    margin: 10% 0px;
+    display: flex;
+    font-size: 1.5rem;
+    align-content: space-around;
+     justify-content: center;
+    align-items: center;
+    /* margin: 40px; */
+
+
+}
+.about-t {
+    width: 55vw;
+    font-family: monospace;
+    font-size: 25px;
+}
+.imgs{
+    width: 20vw;
+}
+/* BLOGS */
+.BLOGS {
+    padding:5%;
+}
+.Blog-intro{
+    font-family: monospace;
+    font-size: 1.2rem;
+    margin: auto;
+    width: 52vw;
+}
+.Blog-intro h3{
+    text-align: center;
+}
+.b-section-first {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.b-section-first .text h2{
+    font-family: MRF;
+    font-size: 2rem;
+    color: var(--head);
+}
+.b-section-first .text ul li{
+    list-style:none;
+}
+.b-section-first .text ul {
+    font-size: 1.2rem;
+    /* padding: 10px 14px; */
+}
+/* Footer */
+.footer{
+    display: flex;
+    height: 17vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.foot-middle .links{
+    padding: 5px;
+}
+.foot-right .contact{
+    font: 1.2rem;
+    color: wheat;
+    -webkit-text-stroke: 1px rgba(9, 13, 75, 0.856);
+}
+.foot-right .gmail{
+    font-family: monospace;
+}

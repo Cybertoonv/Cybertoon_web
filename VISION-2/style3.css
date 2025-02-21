@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'MRF';
+    src: url('fonts/MonumentExtended-Regular.otf') format('opentype');
+}
+:root{
+    --seek:#000000d6;
+    --lc:rgb(255, 255, 255);
+    --sides:rgb(193 85 85);
+    --b:rgba(114, 114, 114, 0.849);
+    --head:rgb(5, 12, 70);
+    --lg:linear-gradient(to right, #ff5f5f, #feb47b);
+    --bg:linear-gradient(305deg, #000000, #242424f2);
+}
+.logo{
+    background-image: url('/images/grey.jpeg');
+    -webkit-background-clip: text;
+    color: transparent;  
+    font-family: MRF;
+    font-size: 35px;
+
+}
+.invert{
+    filter: invert();
+}
+.MRF{
+    font-family: MRF;
+}
+/* Full scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 10px; /* Height for horizontal scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #666565; /* Light grey */
+    border-radius: 10px;
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #0c0c0c; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0c0c0c; /* Slightly darker grey */
+}
+
+html, body {
+    margin: 0; /* Ensure no default margin causing overflow */
+    padding: 0; /* Ensure no default padding causing overflow */
+    height: 100%; /* Ensure the body and HTML take up the full viewport */
+    overflow: hidden; /* Disable scrolling entirely */
+}
+
+body::-webkit-scrollbar {
+    /* removing scrollbar */
+    display: none; /* Chrome, Safari, Opera */
+}
+body{
+    height: 99%;
+    /* Removing scrollbar */
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    /*  */
+    background: var(--bg);
+    /* background-color: rgba(27, 27, 27, 0.699); */
+    border: 2px solid var(--sides);
+    width: 99%;
+    /* margin: 5px; */
+}
+.links ul li {
+    list-style: none;
+    font-family: MRF;
+    font-size: 14px;
+    padding: 0px 8px;
+}
+.links ul li a {
+    color: var(--lc);
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.navbar{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.links ul{
+    display: flex;
+}
+/* ICONS */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+.social-icons li {
+    display: inline;
+}
+.social-icons a {
+    color: var(--sides);
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: var(--b);
+}
+/* Main container */
+/* Image set left */
+.main-container {
+    display: flex; /* Align left and right sides horizontally */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+  }
+.left-side {
+    display: flex;
+    width: 45%;
+    background-image: url(/images/Sullo.png);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+}
+  /* Arrows to change the playlist */
+  .arrows {
+    display: flex;
+    /* align-content: center; */
+    justify-content: space-between;
+}
+.arrow-left, .arrow-right {
+    cursor: pointer;
+    border: 1px solid #706c6c70;
+    color: white;
+    padding: 2px 18px;
+    font-size: 40px;
+    background-color: #59595940;
+}
+  
+  /* Right side content */
+  .right-side {
+    display: flex;
+    background: #00000045;
+    /* flex: 1; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.right-head{
+    margin: 0px 4vw;
+
+}
+.right-head h1{
+    color: #340ea3fa;
+    margin: 0;
+    margin-top: 10%;
+  font-size: 3.5rem;
+}
+.right-head p{
+    font-size: 1.5rem;
+font-family: monospace;
+font-weight: bolder;
+}
+.right-head span{
+    color: #ad2d90f2;
+}
+.right-head .line {
+    margin: 5% 0;
+    width: 100%; 
+    height: 2px;
+    background-color: #c5c5c5;
+  }
+/* SOnglisting */
+.songList {
+    height: 40%;
+    margin: 0px 6vw;
+    /* height: 544px; */
+    overflow: auto;
+    margin-bottom: 38px;
+}
+.song-info {
+    gap: 26px;
+    /* font-size: 17px; */
+    display: flex;
+    align-items: center;
+    color: #0d6acd;
+}
+
+.songList ul li {
+    /* list-style-type: decimal; */
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 12px;
+    cursor: pointer;
+    /* padding: 12px 0; */
+    /* border: 1px solid rgba(146, 143, 143, 0.491); */
+    /* margin: 12px 0; */
+    padding: 4px;
+    /* border-radius: 5px; */
+}
+
+.songList .info {
+    display: flex;
+    text-transform: capitalize;
+    font-family: 'MRF';
+    font-size: 18px;
+    width: 31.7vw;
+    justify-content: flex-start;
+    align-content: center;
+}
+/* Player */
+
+.playnow {
+    gap: 28px;
+    display: flex;
+    align-items: stretch;
+}
+
+.playnow span {
+    font-size: 15px;
+    width: 64px;
+    padding: 12px;
+}
+
+.seekbar {
+    height: 3px;
+    width: 50%;
+    background: var(--seek);
+    /* border-radius: 10px; */
+    position: absolute;
+    bottom: 8px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: var(--seek);
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.5s;
+}
+
+.songbuttons img {
+    cursor: pointer;
+}
+
+.timevol {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.songinfo {
+    font-family: 'MRF';
+    color: var(--seek);
+    padding: 0 12px;
+    width: 250px;
+}
+.songtime {
+    width: 125px;
+    color: var(--seek);
+    padding: 0 12px;
+}
+
+
+.volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+.range input{
+    cursor: pointer;
+}
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 100%;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburgerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.playbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+    filter: invert(1);
+    background: #ffffff;
+    padding: 12px;
+}
+
